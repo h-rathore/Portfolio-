@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
   /* Colors */
@@ -207,11 +207,13 @@ body:hover .cursor-glow {
 .logo {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: -0.03em;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .logo-dot {
@@ -813,7 +815,7 @@ body:hover .cursor-glow {
 }
 
 .project-outcomes li::before {
-  content: 'â†’';
+  content: '→';
   position: absolute;
   left: 0;
   color: var(--secondary);
@@ -1657,7 +1659,7 @@ textarea.form-input ~ .form-label {
 
 
 /* ==========================================
-   MOBILE RESPONSIVE â€” Android & iOS
+   MOBILE RESPONSIVE — Android & iOS
    ========================================== */
 
 /* iOS safe area (notch / home indicator) */
@@ -1687,7 +1689,7 @@ html {
   .mobile-menu-toggle { padding: 10px; min-width: 44px; min-height: 44px; }
 }
 
-/* Tablet 768â€“1024px */
+/* Tablet 768–1024px */
 @media (max-width: 1024px) {
   .container { padding: 0 32px; }
 
@@ -1727,7 +1729,7 @@ html {
 
   /* Nav */
   .navbar-container { height: 64px; }
-  .logo { font-size: 1.1rem; }
+  .logo { font-size: 0.85rem; letter-spacing: 0.01em; }
 
   .nav-links {
     display: none;
@@ -1913,7 +1915,7 @@ html {
   .hero-wrapper { min-height: calc(var(--vh, 1vh) * 100 - 70px); }
   .header, .nav-links { -webkit-backdrop-filter: blur(16px); }
 
-  /* Prevent auto-zoom on input focus â€” must be >= 16px */
+  /* Prevent auto-zoom on input focus — must be >= 16px */
   .form-input,
   .terminal-input,
   .cmd-input { font-size: 16px !important; }
