@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Harsh Rathore | Software Developer & AI/ML Enthusiast</title>
+  <meta name="description" content="Portfolio of Harsh Rathore, a Software Developer and B.Tech CSE student passionate about Web Development, AI/ML, and building high-performance products.">
+  <meta name="keywords" content="Harsh Rathore, Portfolio, Software Developer, B.Tech CSE, AI/ML, Web Development, DSA, React Developer, India">
+  <meta name="author" content="Harsh Rathore">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harsh Rathore | Software Developer">
+  <meta property="og:description" content="Building impactful software, exploring AI, and turning ideas into real products.">
+  <meta property="og:url" content="https://harshrathore.dev/">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Harsh Rathore | Software Developer">
+  <meta property="twitter:description" content="Building impactful software, exploring AI, and turning ideas into real products.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Elements -->
+  <div class="bg-radial-glow"></div>
+  <div class="bg-grid-overlay"></div>
+  <canvas id="canvas-particles"></canvas>
+  <div class="cursor-glow" id="custom-cursor"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar-container">
+      <a href="#home" class="logo" id="nav-logo">
+        HRSH RTHRE <span class="logo-dot"></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-right">
+        <button class="cmd-palette-trigger" id="cmd-trigger" aria-label="Open Command Palette">
+          <span>Search</span> <span class="cmd-key">Ctrl+K</span>
+        </button>
+        
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress" id="scroll-bar"></div>
+    </div>
+  </header>
+
+  <!-- Main Content Sections -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="section container" style="padding-top: 140px;">
+      <div class="hero-wrapper">
+        <div class="hero-content reveal">
+          <div class="hero-tagline">
+            <span class="hero-tagline-dot"></span>
+            <span>AVAILABLE FOR INTERNSHIPS & COLLABORATIONS</span>
+          </div>
+          <h1 class="hero-name">HARSH RATHORE</h1>
+          <h2 class="hero-headline">
+            Full-Stack Developer | <span class="accent-text">AI/ML Enthusiast</span> | B.Tech CSE (AI-ML)
+          </h2>
+          <p class="hero-intro">
+            I build full-stack web applications and explore AI/ML to solve practical problems through scalable and user-focused solutions. Passionate about software development, problem solving, and creating impactful digital experiences.
+          </p>
+          <div class="hero-actions">
+            <!-- Resume Download Button -->
+            <a href="resume.pdf" download="Harsh_Rathore_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
+              Download Resume
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </a>
+            <!-- GitHub Button -->
+            <a href="https://github.com/h-rathore" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 4px;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/harshrathore-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              LinkedIn
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 4px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <!-- Email Contact Button -->
+            <a href="mailto:h.rathore2122@gmail.com" class="btn btn-secondary">
+              Email Contact
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/h-rathore" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/harshrathore-" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:h.rathore2122@gmail.com" class="social-link" aria-label="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Tech Code Mockup Box -->
+        <div class="hero-code-visual reveal">
+          <div class="code-box">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <div class="code-title">guest@harshrathore: ~ (bash)</div>
+            </div>
+            <div class="code-body">
+              <div class="terminal-history" id="term-history">
+                <div class="code-line"><span class="code-comment"># Welcome. Type 'help' to fetch core variables.</span></div>
+                <div class="code-line"><span class="terminal-input-prompt">guest@harsh:~$</span> python harsh_dev.py</div>
+                <div class="code-line">Name: Harsh Rathore</div>
+                <div class="code-line">Role: Full-Stack Developer | AI/ML Enthusiast</div>
+                <div class="code-line">Focus: B.Tech CSE (AI-ML)</div>
+              </div>
+              <div class="terminal-input-line">
+                <span class="terminal-input-prompt">guest@harsh:~$</span>
+                <input type="text" class="terminal-input" id="term-input" placeholder="try 'help'..." autocomplete="off" aria-label="Terminal Input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section container">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="section-subtitle reveal">A developer who loves crafting performant systems and diving deep into data structures, algorithms, and models.</p>
+      
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a **B.Tech Computer Science and Engineering student** dedicated to building premium software products. I focus on creating clean, intuitive interfaces backed by scalable and robust server architectures.
+          </p>
+          <p>
+            Rather than confining myself to one ecosystem, I actively bridge the gap between **high-performance Web Applications** and **intelligent AI/ML pipelines**. My academic journey is coupled with hands-on projects, giving me practical experience in database systems, API design, and model fine-tuning.
+          </p>
+          <p>
+            I value collaboration, clear code structure, and writing documentation that matters. Whether leading hackathon teams or diving into open-source repositories, my goal is always to deliver code that runs efficiently.
+          </p>
+        </div>
+        
+        <!-- Interactive competencies grid -->
+        <div class="about-bullets-grid reveal">
+          <div class="glass-card about-bullet-card">
+            <span class="about-bullet-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </span>
+            <h3>Web Development</h3>
+            <p>Crafting responsive frontends and secure REST APIs using Node.js, Express, and React.</p>
+          </div>
+          <div class="glass-card about-bullet-card">
+            <span class="about-bullet-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+            </span>
+            <h3>DSA Focus</h3>
+            <p>Solving complex computational problems with Java, focusing on runtime efficiency.</p>
+          </div>
+          <div class="glass-card about-bullet-card">
+            <span class="about-bullet-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </span>
+            <h3>AI / ML</h3>
+            <p>Analyzing datasets and training analytical models using Python libraries.</p>
+          </div>
+          <div class="glass-card about-bullet-card">
+            <span class="about-bullet-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </span>
+            <h3>Open Source</h3>
+            <p>Contributing features and documentation to developer ecosystems and communities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <p class="section-subtitle reveal">A curated stack of technologies I actively work with. No fake progress bars, just solid developer tooling.</p>
+      
+      <div class="skills-grid reveal">
+        
+        <!-- Programming -->
+        <div class="glass-card skill-category-card">
+          <h3>Programming <span class="skill-count">03</span></h3>
+          <div class="skills-list">
+            <div class="skill-pill">
+              <span>Python</span>
+            </div>
+            <div class="skill-pill">
+              <span>Java</span>
+            </div>
+            <div class="skill-pill">
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="glass-card skill-category-card">
+          <h3>Web Dev <span class="skill-count">05</span></h3>
+          <div class="skills-list">
+            <div class="skill-pill">
+              <span>HTML</span>
+            </div>
+            <div class="skill-pill">
+              <span>CSS</span>
+            </div>
+            <div class="skill-pill">
+              <span>React.js</span>
+            </div>
+            <div class="skill-pill">
+              <span>Node.js</span>
+            </div>
+            <div class="skill-pill">
+              <span>Express.js</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Database -->
+        <div class="glass-card skill-category-card">
+          <h3>Databases <span class="skill-count">02</span></h3>
+          <div class="skills-list">
+            <div class="skill-pill">
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-pill">
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI/ML -->
+        <div class="glass-card skill-category-card">
+          <h3>AI / ML <span class="skill-count">06</span></h3>
+          <div class="skills-list">
+            <div class="skill-pill">
+              <span>Machine Learning</span>
+            </div>
+            <div class="skill-pill">
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-pill">
+              <span>Data Preprocessing</span>
+            </div>
+            <div class="skill-pill">
+              <span>Data Analysis</span>
+            </div>
+            <div class="skill-pill">
+              <span>Model Training</span>
+            </div>
+            <div class="skill-pill">
+              <span>Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tools -->
+        <div class="glass-card skill-category-card">
+          <h3>Tools & DevEnv <span class="skill-count">03</span></h3>
+          <div class="skills-list">
+            <div class="skill-pill">
+              <span>Git</span>
+            </div>
+            <div class="skill-pill">
+              <span>GitHub</span>
+            </div>
+            <div class="skill-pill">
+              <span>Visual Studio Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">A select showcase of systems and platforms I've built. Recruiter-focused, functional code bases.</p>
+      
+      <div class="projects-showcase">
+        
+        <!-- Project A: HostelHub -->
+        <div class="glass-card project-card reveal">
+          <div class="project-details">
+            <div>
+              <div class="project-badges">
+                <span class="project-badge">Core Project</span>
+                <span class="project-badge">Full-Stack</span>
+              </div>
+              <h3 class="project-title">HostelHub</h3>
+              <p class="project-desc">
+                Built a full-stack hostel management system with role-based access and centralized student and complaint management.
+              </p>
+              
+              <div class="project-problem-box">
+                <div class="project-problem-title">Core Architecture</div>
+                <div class="project-problem-text">
+                  Features a robust React.js client interface with secure Node.js routing and Express.js REST API modules, structured via MongoDB schemas.
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/h-rathore/hostelhub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-visual">
+            <div class="mockup-dashboard">
+              <div class="mockup-header">
+                <span class="code-dot red" style="width:6px;height:6px;margin-right:4px;"></span>
+                <span class="code-dot yellow" style="width:6px;height:6px;margin-right:4px;"></span>
+                <span class="code-dot green" style="width:6px;height:6px;"></span>
+                <span style="font-size:0.6rem; margin-left: 10px; color:#52525b;">hostelhub.org/dashboard</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-card">
+                  <div style="font-size:0.65rem; font-weight:600; color:#e4e4e7;">Occupancy Rate</div>
+                  <div style="font-size:1.1rem; font-weight:700; color:#3b82f6; margin: 4px 0;">94.2%</div>
+                  <div class="mockup-bar"><div class="mockup-bar-fill"></div></div>
+                </div>
+                <div class="mockup-card">
+                  <div style="font-size:0.65rem; font-weight:600; color:#e4e4e7;">Active Tickets</div>
+                  <div style="font-size:1.1rem; font-weight:700; color:#06b6d4; margin: 4px 0;">12 Pending</div>
+                  <div class="mockup-bar"><div class="mockup-bar-fill cyan"></div></div>
+                </div>
+                <div class="mockup-card" style="grid-column: span 2;">
+                  <div style="font-size:0.65rem; font-weight:600; color:#e4e4e7; margin-bottom: 4px;">Recent Room Allocation Map</div>
+                  <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div style="font-size:0.6rem; color:#a1a1aa;">Block A - Room 104</div>
+                    <div class="mockup-indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project B: Pandemic Resource Allocation System -->
+        <div class="glass-card project-card reveal">
+          <div class="project-details">
+            <div>
+              <div class="project-badges">
+                <span class="project-badge">Team Leader</span>
+                <span class="project-badge">Healthcare</span>
+              </div>
+              <h3 class="project-title">Pandemic Resource Allocation</h3>
+              <p class="project-desc">
+                Built a centralized healthcare resource allocation platform with dashboards for hospitals, authorities, and citizens to track real-time capacity and medical logs.
+              </p>
+              
+              <div class="project-problem-box">
+                <div class="project-problem-title">Core Architecture</div>
+                <div class="project-problem-text">
+                  Centralizes inventory metrics from independent hospital database schemas using secure REST endpoints and displays them on real-time civic dashboards.
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="project-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/h-rathore/pandemic-resources" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-visual">
+            <div class="mockup-dashboard">
+              <div class="mockup-header">
+                <span class="code-dot red" style="width:6px;height:6px;margin-right:4px;"></span>
+                <span class="code-dot yellow" style="width:6px;height:6px;margin-right:4px;"></span>
+                <span class="code-dot green" style="width:6px;height:6px;"></span>
+                <span style="font-size:0.6rem; margin-left: 10px; color:#52525b;">resourceportal.gov.in</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-card" style="grid-column: span 2;">
+                  <div style="font-size:0.65rem; font-weight:600; color:#e4e4e7;">Real-time Resource Distribution</div>
+                  <div style="display:flex; justify-content:space-around; align-items:center; height: 100%;">
+                    <div style="text-align:center;">
+                      <div style="font-size:0.5rem; color:#71717a;">ICU Beds</div>
+                      <div style="font-size:0.9rem; color:#10b981; font-weight:700;">180 Free</div>
+                    </div>
+                    <div style="text-align:center;">
+                      <div style="font-size:0.5rem; color:#71717a;">Oxygen Cylinders</div>
+                      <div style="font-size:0.9rem; color:#f59e0b; font-weight:700;">45 Low</div>
+                    </div>
+                    <div style="text-align:center;">
+                      <div style="font-size:0.5rem; color:#71717a;">Hospitals Connected</div>
+                      <div style="font-size:0.9rem; color:#3b82f6; font-weight:700;">28 Node</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience & Leadership Section -->
+    <section id="experience" class="section container">
+      <h2 class="section-title reveal">Experience & Leadership</h2>
+      <p class="section-subtitle reveal">Active volunteer roles demonstrating engineering community involvement and event coordination.</p>
+      
+      <div class="experience-grid reveal">
+        
+        <!-- Experience 1: IEEE -->
+        <div class="glass-card experience-card">
+          <div>
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">IEEE Student Member</h3>
+                <span class="exp-org">IILM University Student Chapter</span>
+              </div>
+              <span class="exp-period">Ongoing</span>
+            </div>
+            <p class="exp-desc">
+              Active student member contributing to the institutional IEEE student branch. Collaborate on academic tech symposiums, promote engineering research methodologies, and engage in collaborative computing workshops.
+            </p>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">IEEE Chapter</span>
+            <span class="exp-tag">Academic Sprints</span>
+            <span class="exp-tag">Collaboration</span>
+          </div>
+        </div>
+
+        <!-- Experience 2: Event Coordinator -->
+        <div class="glass-card experience-card">
+          <div>
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Event Coordinator</h3>
+                <span class="exp-org">MOSAIC & IGNITE Symposiums</span>
+              </div>
+              <span class="exp-period">2023 - 2025</span>
+            </div>
+            <p class="exp-desc">
+              Lead coordinator for core institutional tech-fests. Successfully planned and executed coding hackathons, competitive debugging forums, technical quizzes, and technology presentations:
+              <br><br>
+              • Coordinator for <strong>IGNITE 2025</strong>
+              <br>
+              • Coordinator for <strong>IGNITE 2024</strong>
+              <br>
+              • Coordinator for <strong>MOSAIC 2023</strong>
+            </p>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">IGNITE 2025</span>
+            <span class="exp-tag">IGNITE 2024</span>
+            <span class="exp-tag">MOSAIC 2023</span>
+            <span class="exp-tag">Event Operations</span>
+            <span class="exp-tag">Coordination</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section container">
+      <h2 class="section-title reveal">Certifications</h2>
+      <p class="section-subtitle reveal">Verified academic credentials and training programs in computer science disciplines.</p>
+      
+      <div class="cert-grid reveal">
+        
+        <!-- Cert 1 -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Artificial Intelligence & ML Training</h3>
+            <p class="cert-provider">Infosys Springboard</p>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Alpha – DSA with Java</h3>
+            <p class="cert-provider">Apna College</p>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="glass-card cert-card">
+          <div class="cert-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <div class="cert-info">
+            <h3>Introduction to Cybersecurity</h3>
+            <p class="cert-provider">Cisco Networking Academy</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Badges & Achievements Section -->
+    <section class="section container">
+      <h2 class="section-title reveal">Credentials & Achievements</h2>
+      <p class="section-subtitle reveal">Verified technical credentials, digital badges, and leadership awards.</p>
+      
+      <div class="extras-grid reveal">
+        <!-- Google Cloud Badges -->
+        <div class="badge-card">
+          <div class="badge-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 8.58"/></svg>
+          </div>
+          <h3>Google Cloud Badges</h3>
+          <p>Completed hands-on tracks in Google Cloud infrastructure, orchestration, and storage architectures.</p>
+        </div>
+        
+        <!-- Generative AI Badges -->
+        <div class="badge-card">
+          <div class="badge-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Generative AI Badges</h3>
+          <p>Acquired credentials in large language models, prompt designs, and AI application engineering basics.</p>
+        </div>
+        
+        <!-- Hackathon Leadership -->
+        <div class="badge-card">
+          <div class="badge-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Hackathon Leadership</h3>
+          <p>Organized sprints, designed architectures, and guided development modules under competitive 36-hour timelines.</p>
+        </div>
+        
+        <!-- IBM ICE Participation -->
+        <div class="badge-card">
+          <div class="badge-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <h3>IBM ICE Participation</h3>
+          <p>Presented analytical data structures and processing pipelines to IBM engineering panels during ICE evaluation cycles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-subtitle reveal">“Open to internships, collaborations, and exciting opportunities.”</p>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <!-- Direct Email -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>Direct Email</h4>
+              <a href="mailto:h.rathore2122@gmail.com" target="_blank" rel="noopener noreferrer">h.rathore2122@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Direct Phone -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>Direct Call</h4>
+              <a href="tel:+919310305399" target="_blank" rel="noopener noreferrer">+91 9310305399</a>
+            </div>
+          </div>
+          
+          <!-- LinkedIn -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/harshrathore-" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/harshrathore-</a>
+            </div>
+          </div>
+          
+          <!-- GitHub -->
+          <div class="glass-card contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <div class="contact-card-info">
+              <h4>GitHub</h4>
+              <a href="https://github.com/h-rathore" target="_blank" rel="noopener noreferrer">github.com/h-rathore</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass-card contact-form-card reveal">
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-input" placeholder=" " required>
+              <label for="form-name" class="form-label">Your Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-input" placeholder=" " required>
+              <label for="form-email" class="form-label">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+              <label for="form-message" class="form-label">Your Message</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="form-submit" style="width: 100%;">
+              Send Message
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        &copy; 2026 Harsh Rathore. Built with premium custom code.
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Back to Top</a></li>
+        <li><a href="https://github.com/h-rathore" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/harshrathore-" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Command Palette Modal -->
+  <div class="cmd-overlay" id="cmd-overlay">
+    <div class="cmd-box">
+      <div class="cmd-header">
+        <svg class="cmd-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or navigate..." autocomplete="off">
+        <span class="cmd-esc">ESC</span>
+      </div>
+      <ul class="cmd-list" id="cmd-results">
+        <!-- JS will dynamically populate items -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
